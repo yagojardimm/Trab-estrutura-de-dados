@@ -23,8 +23,7 @@ Fluxograma/Cadastro de Animais
 ![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/d6a4d794-7ed1-4af0-97ea-b680d3d66040)
 
 
-
-![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/65078457-9e50-41bc-8c4f-61f058163ccb)
+![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/6866391f-2ad7-4887-aa85-0e89e66c395c)
 
 
 ![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/3a9a8f2e-172d-4912-b052-fea0420e1333)
