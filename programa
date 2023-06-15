@@ -11,4 +11,4 @@ class Animal:
         print("Cor:", self.cor)
         print("Porte:", self.porte)
         print("Particularidade:", self.particularidade)
-
+       class Interessado:
