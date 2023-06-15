@@ -26,7 +26,7 @@ A prefeitura precisa de um sistema que possa cadastrar todos os animais por tipo
 ![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/5a427a1e-afb9-4624-b5b4-dcb7da788bcd)
 
 
-![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/3a9a8f2e-172d-4912-b052-fea0420e1333)
+![image](https://github.com/yagojardimm/Trab-estrutura-de-dados/assets/134665777/c2a5b422-ff25-4983-b26b-7285f4578768)
 
 # CÓDIGO
 
