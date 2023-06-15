@@ -6,4 +6,9 @@ class Animal:
       self.porte = porte
         self.particularidade = particularidade
      def exibir_informacoes(self):
-      
+        print("Tipo:", self.tipo)
+        print("Idade:", self.idade)
+        print("Cor:", self.cor)
+        print("Porte:", self.porte)
+        print("Particularidade:", self.particularidade)
+
