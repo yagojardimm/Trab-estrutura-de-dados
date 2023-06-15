@@ -1,4 +1,4 @@
-from classes import *
+from Classes import *
 
 while True:
     print( '=' * 50)
