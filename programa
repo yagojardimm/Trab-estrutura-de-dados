@@ -1,14 +1,93 @@
-class Animal:
-    def _init_(self, tipo, idade, cor, porte, particularidade):
-        self.tipo = tipo
-        self.idade = idade
-        self.cor = cor
-      self.porte = porte
-        self.particularidade = particularidade
-     def exibir_informacoes(self):
-        print("Tipo:", self.tipo)
-     print("Idade:", self.idade)
-        print("Cor:", self.cor)
-        print("Porte:", self.porte)
-        print("Particularidade:", self.particularidade)
-       class Interessado:
+def main():
+    sistema = SistemaAdocao()
+
+    while True:
+        print("----- Sistema de Adoção de Animais -----")
+        print("1. Cadastrar animal")
+        print("2. Cadastrar pessoa")
+        print("3. Emitir relatório")
+        print("4. Pesquisar animais")
+        print("0. Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            print("----- Cadastrar Animal -----")
+            print("Tipos de animais:")
+            print("1. Canino")
+            print("2. Felino")
+            print("3. Ave")
+            print("4. Outro tipo")
+            tipo_opcao = input("Selecione o tipo de animal (1-4): ")
+
+            if tipo_opcao == "1":
+                tipo_animal = "Canino"
+            elif tipo_opcao == "2":
+                tipo_animal = "Felino"
+            elif tipo_opcao == "3":
+                tipo_animal = "Ave"
+            elif tipo_opcao == "4":
+                tipo_animal = input("Digite o tipo de animal: ")
+            else:
+                print("Opção inválida! Voltando ao menu principal.\n")
+                continue
+
+            idade = input("Idade aproximada: ")
+            cor = input("Cor: ")
+
+            print("Selecione o porte do animal:")
+            print("1. Pequeno")
+            print("2. Médio")
+            print("3. Grande")
+            porte_opcao = input("Opção: ")
+            if porte_opcao == "1":
+                porte = "Pequeno"
+            elif porte_opcao == "2":
+                porte = "Médio"
+            elif porte_opcao == "3":
+                porte = "Grande"
+            else:
+                print("Opção inválida! Voltando ao menu principal.\n")
+                continue
+
+            particularidade = input("Particularidade: ")
+
+            sistema.cadastrar_animal(tipo_animal, idade, cor, porte, particularidade)
+            print("Animal cadastrado com sucesso!\n")
+
+        elif opcao == "2":
+            print("----- Cadastrar Pessoa -----")
+            nome = input("Nome: ")
+            contato = input("Contato: ")
+
+            print("Tipos de animais de interesse:")
+            print("1. Canino")
+            print("2. Felino")
+            print("3. Ave")
+            print("4. Outro tipo")
+            interesse_opcao = input("Selecione o tipo de animal de interesse (1-4): ")
+
+            if interesse_opcao == "1":
+                interesse = "Canino"
+            elif interesse_opcao == "2":
+                interesse = "Felino"
+            elif interesse_opcao == "3":
+                interesse = "Ave"
+            elif interesse_opcao == "4":
+                interesse = input("Digite o tipo de animal de interesse: ")
+            else:
+                print("Opção inválida! Voltando ao menu principal.\n")
+                continue
+
+            preferencia = input("Alguma preferência do animal: ")
+
+            sistema.cadastrar_pessoa(nome, contato, interesse, preferencia)
+            print("Pessoa cadastrada com sucesso!\n")
+
+        elif opcao == "3":
+            print("----- Emitir Relatório -----")
+            sistema.emitir_relatorio()
+
+        elif opcao == "4":
+            print("----- Pesquisar Animais -----")
+            tipo_pesquisa = input
