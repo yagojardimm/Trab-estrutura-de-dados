@@ -1,4 +1,4 @@
-from Classes import *
+from classes import *
 
 while True:
     print( '=' * 50)
@@ -16,6 +16,6 @@ while True:
         casdastro_pessoa.cadastrar_pessoa()
     elif opcao == '3':
         prefeitura = Prefeitura()
-        prefeitura.mostrar_animais_cadastrados()
-        prefeitura.mostrar_pessoas_cadastradas()
-
+    elif opcao == '4':
+        adocao_animal = Prefeitura()
+        adocao_animal.adocao()
