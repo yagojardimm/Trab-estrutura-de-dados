@@ -2,7 +2,7 @@
 
 # Curso: Engenharia de Software 
 # Disciplina: Estrutura de Dados
-# Professor: Marcio Alexandre Dias Garrido
+# Professor: Marcio Alexandre Dias Garrido  # https://github.com/marciogarridoLaCop
 # Período: 3° Período
   
 
