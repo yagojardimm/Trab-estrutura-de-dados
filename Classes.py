@@ -55,10 +55,25 @@ class Prefeitura:
         pessoa = str(input('Preferencia de animal da pessoa: '))
         self.pessoas.append(pessoa)
 
-    def mostrar_animais_cadastrados(self):
+    def mostrar_cadastrados(self):
         for animal in self.animais:
             animal.exibir_dados()
-
-    def mostrar_pessoas_cadastradas(self):
         for pessoa in self.pessoas:
             pessoa.exibir_dados()
+
+    def adocao(self):
+        animal_adotado = Animal()
+        animal_adotado = str(input(f'Tipo do animal: '))
+        animal_adotado = int(input(f'Idade do animal: '))
+        animal_adotado = str(input(f'Cor do animal: '))
+        animal_adotado = str(input(f'Porte do animal: '))
+        animal_adotado = str(input(f'Particularidade do animal: '))
+        self.animais.remove(animal_adotado)
+        pessoa = Pessoa()
+        pessoa = str(input('Nome da pessoa: '))
+        pessoa = int(input('Telefone da pessoa: '))
+        pessoa = str(input('Email da pessoa: '))
+        pessoa = input('Endereço da pessoa: ')
+        pessoa = str(input('Espécie de interesse da pessoa: '))
+        pessoa = str(input('Preferencia de animal da pessoa: '))
+        self.pessoas.remove(pessoa)
