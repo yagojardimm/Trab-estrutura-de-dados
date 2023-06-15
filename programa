@@ -9,4 +9,6 @@ class Animal:
         print("Tipo:", self.tipo)
      print("Idade:", self.idade)
         print("Cor:", self.cor)
+        print("Porte:", self.porte)
         
+
