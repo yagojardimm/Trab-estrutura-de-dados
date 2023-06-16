@@ -7,6 +7,7 @@ class Animal:
         self.particularidade = particularidade
 
     def exibir_dados(self):
+        print('=' * 50)
         print('Animais')
         print(f"Espécie: {self.especie}")
         print(f"Idade Estimada: {self.idade_estimada}")
@@ -36,6 +37,7 @@ class Pessoa:
         self.preferencia_animal = preferencia_animal
 
     def exibir_dados(self):
+        print('=' * 50)
         print('Pessoas')
         print(f"Nome: {self.nome}")
         print(f"Telefone: {self.telefone}")
