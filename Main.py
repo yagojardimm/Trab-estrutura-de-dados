@@ -1,21 +1,24 @@
-from classes import *
+from Classes import *
+prefeitura = Prefeitura()
 
 while True:
-    print( '=' * 50)
+    print('=' * 50)
     print(f'1 - Cadastrar animal\n'
-        f'2 - Cadastrar Pessoa\n'
-        f'3 - Lista de animais e pessoas interessadas\n'
-        f'4 - Adoção')  
-    print( '=' * 50)
+          f'2 - Cadastrar Pessoa\n'
+          f'3 - Lista de animais e pessoas interessadas\n'
+          f'4 - Adoção\n'
+          f'0 - Sair')
+    print('=' * 50)
     opcao = input("Escolha uma opção: ")
     if opcao == '1':
-        casdastro_animal = Prefeitura()
-        casdastro_animal.cadastrar_animal()
+        prefeitura.cadastrar_animal()
     elif opcao == '2':
-        casdastro_pessoa = Prefeitura()
-        casdastro_pessoa.cadastrar_pessoa()
+        prefeitura.cadastrar_pessoa()
     elif opcao == '3':
-        prefeitura = Prefeitura()
+        prefeitura.mostrar_cadastrados()
     elif opcao == '4':
-        adocao_animal = Prefeitura()
-        adocao_animal.adocao()
+        prefeitura.adocao()
+    elif opcao == '0':
+        break  # Sair do loop
+    else:
+        print('Opção inválida. Escolha novamente.')
